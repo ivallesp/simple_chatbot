@@ -2,6 +2,7 @@ import urllib.request
 import zipfile
 import io
 import os
+import codecs
 
 import pandas as pd
 
@@ -18,7 +19,7 @@ def load_cornell_dialogs(max_length = 150):
         zip_ref = zipfile.ZipFile(io.BytesIO(data))
         zip_ref.extractall(os.path.join(get_data_path()))
 
-    movie_lines = open(os.path.join(path, "movie_lines.txt"), "r").readlines()
+    movie_lines = codecs.open(os.path.join(path, "movie_lines.txt"), "r", "Windows-1252").readlines()
     movie_lines = list(map(lambda x: x.strip().split(" +++$+++ "), movie_lines))
     movie_lines_dict = dict(list(map(lambda x:(x[0], x[-1]), movie_lines)))
 
