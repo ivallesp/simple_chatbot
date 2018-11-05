@@ -5,7 +5,6 @@ from src.general_utilities import batching, get_batcher
 from src.tensorflow_utilities import start_tensorflow_session, get_summary_writer, TensorFlowSaver
 from src.common_paths import get_tensorboard_logs_path, get_models_path, get_data_path
 
-
 import os
 import sys
 
@@ -13,6 +12,7 @@ from tqdm import tqdm
 import numpy as np
 import tensorflow as tf
 
+# Parameters
 BATCH_SIZE=256
 project_id="chatbot"
 version_id="v06"
@@ -36,11 +36,7 @@ process_dialog = lambda dialog: [tuple(pad(x = [character_to_code[ch] for ch in 
 dialogs_codes = list(map(process_dialog, dialogs))
 
 
-
-
-
-# In[9]:
-
+# Architecture
 
 class NameSpacer:
     def __init__(self, **kwargs):
