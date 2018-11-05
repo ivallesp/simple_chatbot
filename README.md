@@ -136,4 +136,4 @@ There is plenty of room for improvement, considering this has been the first wor
 Bug fixes and small improvements will be taken into consideration, although big changes will be discarded because the purpose of this repository is to show how is it possible to build a **simple** chatbot.
 
 ## License
-...
+This project has been licensed under MIT agreement. Please, read the `LICENSE` file for further details. Copyright (c) 2018 Iván Vallés Pérez
