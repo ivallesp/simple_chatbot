@@ -1,0 +1,3 @@
+{
+  "tensorboard_path": "<include here the absolute path of your tensorboard logs folder>"
+}
