@@ -17,7 +17,9 @@ To reproduce these results, you will need to install the following libraries:
 - tqdm
 - tensorboard
 
-Once you have these requirements installed, please open an `ipython` console in the root of the repository and run the following command: `%run src/train.py`. It contains all the necessary steps to reproduce the experiment, from loading the data until opening a console for chatting with the chatbot, once it has been trained.
+Once you have these requirements installed, follow the next steps:
+1. Create the `settings.json` file and fill it with your configuration. Please use the `settings_template.json` as a template.
+2. Open an `ipython` console in the root of the repository and run the following command: `%run src/train.py`. It contains all the necessary steps to reproduce the experiment, from loading the data until opening a console for chatting with the chatbot, once it has been trained.
 
 ## Data
 The data chosen to train the model is the **cornell movie dialog data set**, which contains about 200k dialogs coming from ~10,000 characters of about 600 different movies. A sample of the dataset used is shown below.
